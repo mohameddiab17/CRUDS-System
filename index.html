@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS System</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1 class="my-3 text-center">CRUD(S) System</h1>
+
+    <div class="w-75 mx-auto">
+        <label for="productName" class="py-2">productName:</label>
+        <input oninput="validProductName();" type="text" class="form-control" id="productName">
+        <p class="text-danger d-none" id="wrongName">invalid name (Try with capital letter)</p>
+
+        <label for="productPrice" class="py-2">productPrice:</label>
+        <input type="text" class="form-control" id="productPrice">
+
+        <label for="productCategory" class="py-2">productCategory:</label>
+        <input type="text" class="form-control" id="productCategory">
+
+        <label for="productDesc" class="py-2">productDesc:</label>
+        <textarea  id="productDesc" class="form-control mb-3" ></textarea>
+
+        <button id="addBtn" onclick="addProduct();" class="btn btn-info d-block">add Product</button>
+        <button id="updateBtn" onclick=" updateProduct();"  class="btn btn-warning d-none">update Product</button>
+
+    </div>
+
+    <input oninput="searchByName(this.value);" type="text" placeholder="searsh by name" id="searsh" class="w-75 form-control mx-auto mt-5 mb-2">
+
+    <table class="table my-3 w-75 mx-auto text-center">
+        <thead>
+            <th>productName</th>
+            <th>productPrice</th>
+            <th>productCategory</th>
+            <th>productDesc</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="tBody">
+            
+        </tbody>
+    </table>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

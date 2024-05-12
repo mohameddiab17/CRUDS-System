@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+textarea{
+    resize: none;
+}
+
+.table{
+    --bs-table-color: white;
+    --bs-table-bg: black;
+}
