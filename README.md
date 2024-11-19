@@ -16,6 +16,4 @@ A comprehensive application demonstrating Create, Read, Update, Delete, and Sear
 - **JavaScript**: Implements functionality for CRUDS operations.
 - **Bootstrap**: Enhances responsiveness and UI consistency.
 
----
 
-Let me know if you'd like a LinkedIn post for this or if further edits are needed!
